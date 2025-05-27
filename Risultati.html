@@ -1,80 +1,260 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exported Figma Design</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Images</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+            width: 100%;
+            max-width: 1200px; /* Wider for results page */
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; /* Center items if they don't fill the row */
+            gap: 25px; 
+            margin-bottom: 30px;
+        }
+        .images-container p { /* Styling for JS-inserted messages */
+            font-size: 1.1em;
+            color: #777;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .image-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #e0e0e0; /* Softer border */
+            border-radius: 8px;
+            background-color: #fff; /* Brighter item background */
+            flex: 1 1 300px; /* Flex properties: grow, shrink, basis */
+            max-width: 340px; /* Max width for each item */
+            min-width: 280px; 
+            box-sizing: border-box;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 250px; /* Increased height */
+            background-color: #f8f9fa; /* Lighter placeholder bg */
+            border: 2px dashed #ced4da; /* Softer dashed border */
+            border-radius: 6px; /* Slightly more rounded */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #6c757d; /* Softer text color */
+            font-size: 16px;
+            font-style: italic; /* Italicize placeholder text */
+            margin-bottom: 20px; /* Increased margin */
+            overflow: hidden; 
+        }
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none; 
+            border-radius: 4px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px; /* Adjusted padding */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none; 
+            display: inline-block;
+            margin-top: 10px; /* Increased margin */
+            transition: background-color 0.2s ease-in-out;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #regenerateButton {
+            background-color: #28a745; 
+            /* Other properties inherited from .button or explicitly set if needed */
+        }
+        #regenerateButton:hover {
+            background-color: #1e7e34;
+        }
+    </style>
 </head>
 <body>
-<div class="stitch-design-1">
-<div class="depth-0-frame-0-2">
-<div class="depth-1-frame-0-3">
-<div class="depth-2-frame-0-4">
-<div class="depth-3-frame-0-5">
-<div class="depth-4-frame-0-6">
-<div class="depth-5-frame-0-7">
-<img src="images/vector-0-8.svg" class="vector-0-8" alt="vector-0" />
-<div class="depth-6-frame-0-9"></div>
-</div>
-</div>
-<div class="depth-4-frame-1-10">
-<p class="text-11"><span class="text-rgb-13-20-28">AdGenius</span></p>
-</div>
-</div>
-<div class="depth-3-frame-1-12">
-<div class="depth-3-frame-1-13">
-<div class="depth-4-frame-0-14">
-<p class="text-15"><span class="text-rgb-247-250-252">New Design</span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="depth-2-frame-1-16">
-<div class="depth-3-frame-0-17">
-<div class="depth-4-frame-0-18">
-<div class="depth-5-frame-0-19">
-<p class="text-20"><span class="text-rgb-13-20-28">Your ad creatives are ready!</span></p>
-</div>
-</div>
-<div class="depth-4-frame-1-21">
-<p class="text-22"><span class="text-rgb-13-20-28">Creatives (Square, Portrait &amp; Landscape)</span></p>
-</div>
-<div class="depth-4-frame-2-23">
-<div class="depth-5-frame-0-24">
-<img src="images/depth-6-frame-0-25.png" class="depth-6-frame-0-25" alt="depth-6-frame-0" />
-<img src="images/depth-6-frame-1-26.png" class="depth-6-frame-1-26" alt="depth-6-frame-1" />
-<img src="images/depth-6-frame-2-27.png" class="depth-6-frame-2-27" alt="depth-6-frame-2" />
-</div>
-</div>
-<div class="depth-4-frame-7-28">
-<div class="depth-5-frame-0-29">
-<div class="depth-6-frame-0-30">
-<div class="depth-7-frame-0-31">
-<div class="depth-8-frame-0-32">
-<p class="text-33"><span class="text-rgb-13-20-28">Not satisfied?</span></p>
-</div>
-<div class="depth-8-frame-1-34">
-<p class="text-35"><span class="text-rgb-74-115-156">Regenerate helps you create new ad creatives based on your current settings.</span></p>
-</div>
-</div>
-<div class="depth-7-frame-1-36">
-<div class="depth-8-frame-0-37">
-<p class="text-38"><span class="text-rgb-13-20-28">Regenerate</span></p>
-</div>
-</div>
-</div>
-<img src="images/depth-6-frame-1-39.png" class="depth-6-frame-1-39" alt="depth-6-frame-1" />
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="main-container">
+        <h1>Generated Images</h1>
 
+        <div class="images-container">
+            <div class="image-item">
+                <div class="image-placeholder" id="imageContainer1">
+                    <img src="#" alt="Generated Image 1" id="image1">
+                    <span>Preview 1</span> <!-- Text will be hidden if image loads -->
+                </div>
+                <a href="#" class="button" id="download1" download="generated_image_1.jpg">Download 1</a>
+            </div>
+
+            <div class="image-item">
+                <div class="image-placeholder" id="imageContainer2">
+                    <img src="#" alt="Generated Image 2" id="image2">
+                    <span>Preview 2</span> <!-- Text will be hidden if image loads -->
+                </div>
+                <a href="#" class="button" id="download2" download="generated_image_2.jpg">Download 2</a>
+            </div>
+
+            <div class="image-item">
+                <div class="image-placeholder" id="imageContainer3">
+                    <img src="#" alt="Generated Image 3" id="image3">
+                    <span>Preview 3</span> <!-- Text will be hidden if image loads -->
+                </div>
+                <a href="#" class="button" id="download3" download="generated_image_3.jpg">Download 3</a>
+            </div>
+        </div>
+
+        <button class="button" id="regenerateButton">Regenerate</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const BACKEND_URL = 'http://localhost:5000'; // Assuming Flask runs on port 5000
+            const imagesContainer = document.querySelector('.images-container');
+            
+            const imageElements = [
+                { 
+                    item: document.querySelector('.image-item:nth-child(1)'),
+                    img: document.getElementById('image1'), 
+                    container: document.getElementById('imageContainer1'), 
+                    span: document.querySelector('#imageContainer1 span'), 
+                    download: document.getElementById('download1') 
+                },
+                { 
+                    item: document.querySelector('.image-item:nth-child(2)'),
+                    img: document.getElementById('image2'), 
+                    container: document.getElementById('imageContainer2'), 
+                    span: document.querySelector('#imageContainer2 span'), 
+                    download: document.getElementById('download2') 
+                },
+                { 
+                    item: document.querySelector('.image-item:nth-child(3)'),
+                    img: document.getElementById('image3'), 
+                    container: document.getElementById('imageContainer3'), 
+                    span: document.querySelector('#imageContainer3 span'), 
+                    download: document.getElementById('download3') 
+                }
+            ];
+
+            // Initially hide all image items and download buttons
+            imageElements.forEach(el => {
+                if (el.item) el.item.style.display = 'none'; // Hide the whole item
+                if (el.download) el.download.style.display = 'none';
+            });
+
+            fetch(`${BACKEND_URL}/get-image-data`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data && data.status === 'success' && data.image_urls && data.image_urls.length > 0) {
+                        data.image_urls.forEach((url, index) => {
+                            if (index < imageElements.length) {
+                                const el = imageElements[index];
+                                if (el.item) el.item.style.display = 'flex'; // Show item
+                                if (el.img) {
+                                    el.img.src = url;
+                                    el.img.alt = `Generated Image ${index + 1}`;
+                                    el.img.style.display = 'block';
+                                }
+                                if (el.span) el.span.style.display = 'none'; // Hide placeholder text
+                                if (el.download) {
+                                    el.download.href = url;
+                                    el.download.download = `generated_image_${index + 1}.jpg`;
+                                    el.download.style.display = 'inline-block';
+                                }
+                            }
+                        });
+                        // If fewer than 3 images, the remaining items stay hidden.
+                    } else {
+                        imagesContainer.innerHTML = '<p>No images processed yet or data is unavailable.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching image data:', error);
+                    imagesContainer.innerHTML = `<p>Could not load images. Error: ${error.message}</p>`;
+                });
+
+            // Regenerate button functionality
+            const regenerateButton = document.getElementById('regenerateButton');
+            if (regenerateButton) {
+                regenerateButton.addEventListener('click', () => {
+                    const lastImageLink = localStorage.getItem('lastImageLink');
+                    const lastTitle = localStorage.getItem('lastTitle');
+                    const lastSubtitle = localStorage.getItem('lastSubtitle');
+
+                    if (!lastImageLink) {
+                        alert('No previous image generation data was found. Please create an image first using the form on the start page.');
+                        return;
+                    }
+
+                    let targetUrl = 'https://hook.eu1.make.com/1qi12wxih769egjttf9njmx14ctnwd81';
+                    const params = new URLSearchParams();
+                    params.append('image_link', lastImageLink);
+
+                    if (lastTitle) {
+                        params.append('title', lastTitle);
+                    }
+                    if (lastSubtitle) {
+                        params.append('subtitle', lastSubtitle);
+                    }
+                    
+                    targetUrl += '?' + params.toString();
+
+                    fetch(targetUrl)
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.href = 'Loading.html';
+                            } else {
+                                alert('The regeneration request could not be completed. The server responded with: ' + response.statusText + '. Please try again.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Regeneration fetch error:', error);
+                            alert('The regeneration request failed. Please check your internet connection and try again.');
+                        });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
